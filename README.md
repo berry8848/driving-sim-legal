@@ -32,33 +32,3 @@
 gem install bundler jekyll
 jekyll serve   # http://localhost:4000
 ```
-
-
-
-  新規リポジトリへ push する手順
-
-  このフォルダは今アプリ本体リポの中にあるので、別の場所にコピーしてから独立リポにするのが安全です(本体リポに紛れ込ませない)。
-
-  1. GitHub で空リポジトリを作成(Web)
-    - 名前: driving-sim-legal / Public / README なしで作成
-  2. フォルダを外に出して init & push
-  cp -R /Users/ryunosuke/driving-sim-ios/legal-site ~/driving-sim-legal
-  cd ~/driving-sim-legal
-  git init -b main
-  git add .
-  git commit -m "Add legal documents site"
-  git remote add origin git@github.com:berry8848/driving-sim-legal.git
-  git push -u origin main
-  3. Pages を有効化
-    - リポの Settings → Pages → Source: Deploy from a branch → Branch: main / / (root) → Save
-    - 数分後 https://berry8848.github.io/driving-sim-legal/ で公開
-  4. App Store Connect の「プライバシーポリシー URL」に …/driving-sim-legal/privacy/ を登録
-
-  注意点
-
-  - 本体リポにこの legal-site/ をコミットしたくないなら、.gitignore に legal-site/
-  を足すか、コピー後に元フォルダを削除してください。どうしますか?(残す/無視リスト追加/削除、希望があれば対応します)
-  - 公開前に 〔 〕 プレースホルダの置換を忘れずに(README にチェックリストあり)。grep -rn '〔' legal-site で全部出ます。
-
-  ローカルで見た目を確認したい場合は cd ~/driving-sim-legal && jekyll serve(要 Ruby/Jekyll)で http://localhost:4000
-  に出せます。プレビューまでやりますか?
