@@ -8,7 +8,7 @@
 index.html          トップ（各文書へのリンク）
 terms/index.html    利用規約
 privacy/index.html  プライバシーポリシー
-tokushoho/index.html 特定商取引法に基づく表記
+commercial/index.html 特定商取引法に基づく表記
 ```
 
 各ページは相対リンク（`terms/`、`../`）で繋いでいるため、ユーザーサイト・プロジェクトページのどちらで公開してもリンクが正しく動作します（baseurl の設定不要）。
@@ -18,7 +18,7 @@ tokushoho/index.html 特定商取引法に基づく表記
 - トップ: `https://berry8848.github.io/driving-sim-legal/`
 - 利用規約: `https://berry8848.github.io/driving-sim-legal/terms/`
 - プライバシーポリシー: `https://berry8848.github.io/driving-sim-legal/privacy/`
-- 特定商取引法に基づく表記: `https://berry8848.github.io/driving-sim-legal/tokushoho/`
+- 特定商取引法に基づく表記: `https://berry8848.github.io/driving-sim-legal/commercial/`
 
 ## 公開前チェックリスト
 
