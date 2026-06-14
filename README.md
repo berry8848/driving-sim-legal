@@ -1,6 +1,17 @@
 # driving-sim-legal
 
-運転練習シミュレーターアプリの法的文書（利用規約・プライバシーポリシー・特定商取引法に基づく表記）を GitHub Pages（Jekyll + minima テーマ）で公開するためのリポジトリです。
+運転練習シミュレーターアプリの法的文書（利用規約・プライバシーポリシー・特定商取引法に基づく表記）を GitHub Pages（素の静的 HTML）で公開するためのリポジトリです。
+
+## 構成
+
+```
+index.html          トップ（各文書へのリンク）
+terms/index.html    利用規約
+privacy/index.html  プライバシーポリシー
+tokushoho/index.html 特定商取引法に基づく表記
+```
+
+各ページは相対リンク（`terms/`、`../`）で繋いでいるため、ユーザーサイト・プロジェクトページのどちらで公開してもリンクが正しく動作します（baseurl の設定不要）。
 
 ## 公開URL（例）
 
@@ -28,7 +39,8 @@
 
 ## ローカルプレビュー（任意）
 
+`index.html` をブラウザで直接開くか、簡易サーバーで確認できます。
+
 ```sh
-gem install bundler jekyll
-jekyll serve   # http://localhost:4000
+python -m http.server 8000   # http://localhost:8000
 ```
