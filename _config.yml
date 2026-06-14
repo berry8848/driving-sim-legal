@@ -1,0 +1,23 @@
+# GitHub Pages (Jekyll) サイト設定
+# 公開URL（プロジェクトページの場合）: https://berry8848.github.io/driving-sim-legal/
+#
+# ※ リポジトリ名を driving-sim-legal 以外にした場合、Pages の baseurl は
+#    GitHub が自動で「/<リポジトリ名>」を補うため、ここでの baseurl 設定は不要。
+#    （ユーザーサイト berry8848.github.io で公開するなら baseurl は空のまま）
+
+title: 運転練習シミュレーター
+description: 利用規約・プライバシーポリシー・特定商取引法に基づく表記
+lang: ja
+
+# GitHub Pages が公式サポートするデフォルトテーマ
+theme: minima
+
+# minima のヘッダーナビに出すページ
+header_pages:
+  - terms.md
+  - privacy.md
+  - tokushoho.md
+
+# ビルド対象から除外（リポジトリ運用ファイル）
+exclude:
+  - README.md
